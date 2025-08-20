@@ -11,7 +11,7 @@ void BubbleSort(int arr[],int n){
 }
 
 int main(){
-    int n,target;
+    int n;
     cout<<"enter size of array "<<endl;
     cin>>n;
     cout<<"enter array elements "<<endl;
