@@ -6,7 +6,7 @@ int main() {
     string input, reversed;
     stack<char> s;
 
-    cout << "Enter a string to reverse: ";
+    cout << "Enter a string ";
     getline(cin, input); 
     for (char ch : input) {
         s.push(ch);

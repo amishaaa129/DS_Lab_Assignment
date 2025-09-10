@@ -16,8 +16,8 @@ int main() {
         cout << arr[i] << " ";
     }
 
-    int A[2][2] = { {1, 2}, {3, 4} };
-    int B[2][2] = { {5, 6}, {7, 8} };
+    int A[2][2] = {{1, 2}, {3, 4}};
+    int B[2][2] = {{5, 6}, {7, 8}};
     int result[2][2] = {0};
 
     for (int i = 0; i < 2; i++) {      
@@ -28,7 +28,7 @@ int main() {
         }
     }
 
-    cout << "Matrix Multiplication Result:\n";
+    cout << "Matrix Multiplication Result"<<endl;
     for (int i = 0; i < 2; i++) {
         for (int j = 0; j < 2; j++) {
             cout << result[i][j] << " ";
@@ -49,7 +49,7 @@ int main() {
         }
     }
 
-    cout << "Transpose of the Matrix:\n";
+    cout << "Transpose of the Matrix"<<endl;
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             cout << transpose[i][j] << " ";

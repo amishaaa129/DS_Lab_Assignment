@@ -4,10 +4,10 @@ using namespace std;
 int main() {
     int a[100], n;
 
-    cout << "Enter the size of the array: ";
+    cout << "Enter the size of the array "<<endl;
     cin >> n;
 
-    cout << "Enter the elements of the array:\n";
+    cout << "Enter the elements of the array"<<endl;
     for (int i = 0; i < n; i++) {
         cin >> a[i];
     }
@@ -30,7 +30,7 @@ int main() {
         }
     }
 
-    cout << "\n Array after removing duplicates:\n";
+    cout << " Array after removing duplicates:"<<endl;
     for (int i = 0; i < uniqueIndex; i++) {
         cout << a[i] << " ";
     }

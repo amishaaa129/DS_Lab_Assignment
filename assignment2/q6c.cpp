@@ -15,10 +15,10 @@ int main() {
     cout << "Enter row col val for B:\n";
     for (int i = 0; i < t2; i++) cin >> B[i][0] >> B[i][1] >> B[i][2];
 
-    cout << "\nResult of Multiplication (triplet form):\n";
+    cout << "Result of Multiplication (triplet form):\n";
     for (int i = 0; i < t1; i++) {
         for (int j = 0; j < t2; j++) {
-            if (A[i][1] == B[j][0]) {  // col of A == row of B
+            if (A[i][1] == B[j][0]) {  
                 cout << A[i][0] << " " << B[j][1] << " " << A[i][2] * B[j][2] << endl;
             }
         }

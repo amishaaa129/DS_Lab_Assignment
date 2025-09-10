@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     int n;
-    cout << "Enter size of diagonal matrix: ";
+    cout << "Enter size of diagonal matrix:"<<endl;
     cin >> n;
 
     int diag[n]; 
@@ -16,7 +16,7 @@ int main() {
             if(i==j) cout << diag[i] << " ";
             else cout << 0 << " ";
         }
-        cout ;
+        cout<<endl;
     }
     return 0;
 }

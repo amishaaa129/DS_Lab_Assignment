@@ -4,11 +4,11 @@ using namespace std;
 int main() {
     const int max = 100;
     int a[max];
-    int n = 0; // current size of array
+    int n = 0; 
     int choice;
 
     while (true) {
-        cout << "\nEnter the operation you wish to perform:" << endl;
+        cout << "\nEnter the operation:" << endl;
         cout << "1. CREATE\n2. DISPLAY\n3. INSERT\n4. DELETE\n5. LINEAR SEARCH\n6. EXIT" << endl;
         cin >> choice;
 
@@ -31,7 +31,7 @@ int main() {
 
             case 2: {
                 if (n == 0) {
-                    cout << "Array is empty. Please create it first." << endl;
+                    cout << "Array is empty" << endl;
                 } else {
                     cout << "Displaying the array:" << endl;
                     for (int i = 0; i < n; i++) {
@@ -64,7 +64,7 @@ int main() {
 
             case 4: {
                 int pos;
-                cout << "Enter the position of the element you wish to delete (0-based index): ";
+                cout << "Enter the position of the element you wish to delete ";
                 cin >> pos;
                 if (pos < 0 || pos >= n) {
                     cout << "Invalid position." << endl;
@@ -102,7 +102,7 @@ int main() {
             }
 
             default:
-                cout << "Invalid choice! Please select between 1 to 6." << endl;
+                cout << "Invalid choice" << endl;
         }
     }
 }

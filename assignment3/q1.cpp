@@ -12,7 +12,7 @@ public:
     }
     void push(int value) {
         if (isFull()) {
-            cout << "Stack Overflow! Cannot push " << value << endl;
+            cout << "Stack Overflow, Cannot push " << value << endl;
         } else {
             arr[++top] = value;
             cout << value << " pushed to stack." << endl;
@@ -20,7 +20,7 @@ public:
     }
     void pop() {
         if (isEmpty()) {
-            cout << "Stack Underflow! Nothing to pop." << endl;
+            cout << "Stack Underflow, Nothing to pop." << endl;
         } else {
             cout << arr[top--] << " popped from stack." << endl;
         }
@@ -42,7 +42,7 @@ public:
         if (isEmpty()) {
             cout << "Stack is empty." << endl;
         } else {
-            cout << "Stack elements (top to bottom): ";
+            cout << "Stack elements: ";
             for (int i = top; i >= 0; i--) {
                 cout << arr[i] << " ";
             }
@@ -55,7 +55,7 @@ int main() {
     int choice, value;
 
     do {
-        cout << "\n=== Stack Operations Menu ===\n";
+        cout << "\n Stack Operations Menu \n";
         cout << "1. Push\n2. Pop\n3. isEmpty\n4. isFull\n5. Peek\n6. Display\n0. Exit\n";
         cout << "Enter your choice: ";
         cin >> choice;
@@ -85,7 +85,7 @@ int main() {
             cout << "Exiting program." << endl;
             break;
         default:
-            cout << "Invalid choice. Please try again." << endl;
+            cout << "Invalid choice." << endl;
         }
     } while (choice != 0);
 

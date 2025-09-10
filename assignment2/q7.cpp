@@ -21,8 +21,6 @@ int main() {
             }
         }
     }
-
     cout << "Total number of inversions = " << count << endl;
-
     return 0;
 }
