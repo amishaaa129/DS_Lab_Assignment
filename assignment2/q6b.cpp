@@ -3,19 +3,19 @@ using namespace std;
 
 int main() {
     int t1, t2;
-    cout << "Enter number of non-zero terms in Matrix A: ";
+    cout << "Enter number of non-zero terms in Matrix A: "<<endl;
     cin >> t1;
     int A[t1][3];
-    cout << "Enter row col val for A:\n";
+    cout << "Enter row col val for A:"<<endl;
     for (int i = 0; i < t1; i++) cin >> A[i][0] >> A[i][1] >> A[i][2];
 
-    cout << "Enter number of non-zero terms in Matrix B: ";
+    cout << "Enter number of non-zero terms in Matrix B: "<<endl;
     cin >> t2;
     int B[t2][3];
-    cout << "Enter row col val for B:\n";
+    cout << "Enter row col val for B:"<<endl;
     for (int i = 0; i < t2; i++) cin >> B[i][0] >> B[i][1] >> B[i][2];
 
-    cout << "\nResult of Addition (triplet form):\n";
+    cout << "Result of Addition (triplet form):"<<endl;
     int i = 0, j = 0;
     while (i < t1 && j < t2) {
         if (A[i][0] == B[j][0] && A[i][1] == B[j][1]) {
