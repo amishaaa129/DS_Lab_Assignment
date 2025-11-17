@@ -34,22 +34,17 @@ void insertBeforeAfter(int key, int value, bool before) {
         insertAtBeginning(value);
         return;
     }
-
     Node* temp = head;
     Node* prev = nullptr;
-
     while (temp != nullptr && temp->data != key) {
         prev = temp;
         temp = temp->next;
     }
-
     if (temp == nullptr) {
         cout << "Node with value " << key << " not found.\n";
         return;
     }
-
     Node* newNode = new Node{value, nullptr};
-
     if (before) {
         prev->next = newNode;
         newNode->next = temp;
