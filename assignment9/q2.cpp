@@ -9,9 +9,14 @@ void DFSfunc(int node, vector<vector<int>>& adj, vector<bool>& visited) {
         if (!visited[neighbor])
             DFSfunc(neighbor, adj, visited);
 }
-void DFS(int start, vector<vector<int>>& adj, int n) {
+void DFS(vector<vector<int>>& adj, int n) {
     vector<bool> visited(n, false);
-    DFSfunc(start, adj, visited);
+
+    for(int i = 0; i < n; i++) {
+        if (!visited[i]) {
+            DFSfunc(i, adj, visited);
+        }
+    }
 }
 
 int main() {
@@ -24,5 +29,5 @@ int main() {
     adj[4] = {2};
 
     cout << "DFS starting from node 0: ";
-    DFS(0, adj, n);
+    DFS(adj, n);
 }
